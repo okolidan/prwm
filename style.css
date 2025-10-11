@@ -1,0 +1,1165 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+html {
+    
+    scroll-behavior: smooth;
+}
+
+
+.container-big {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerr {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: rgba(156, 11, 11, 0.994);
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.contact-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+
+.contact-head p a{
+    display: inline-flex;
+    gap: 1rem;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+
+}
+
+.social-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links li{
+    list-style-type: none;
+}
+header i{
+    font-size: 1.3rem;
+    color: white;
+    display: flex;
+
+}
+
+.help a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.nav-item span {
+    color: black;
+    font-size: 1rem;
+}
+
+
+.logo img {
+    width: 15rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* #nav {
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+} */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    z-index: 999;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5rem;
+    background-color: rgba(255, 255, 255, 0.868);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    display: none;
+    
+    
+    
+}
+
+.nav-menu {
+    display: none;
+}
+
+nav .btn-a {
+    color: white;
+    text-decoration: none;
+    padding: .8rem;
+    background-color: rgba(184, 36, 36, 0.844);
+
+}
+
+nav .btn-a:hover {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: black;
+    transition: 0.7s ease, transform 2.3s ease;
+
+}
+
+
+nav ul li a:hover{
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    transition: 0.7s ease, transform 2.3s ease;
+    
+}
+
+nav .active {
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+
+.hero {
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  animation: slideshow 20s infinite;
+}
+
+@keyframes slideshow {
+  0% { background-image: url('https://cdn.pixabay.com/photo/2025/05/29/08/25/doctor-9628974_1280.jpg'); }
+  33% { background-image: url('https://cdn.pixabay.com/photo/2016/11/08/05/29/surgery-1807541_1280.jpg'); }
+  66% { background-image: url('https://cdn.pixabay.com/photo/2017/12/10/05/31/kenya-3009299_1280.jpg'); }
+  100% { background-image: url('PRWM\ Logo-Colour-Badge.svg'); }
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index: 0;
+}
+.hero-content {
+  z-index: 1;
+}
+
+.hero-content {
+  color: white;
+  text-align: center;
+  padding: 0 2rem;
+  
+}
+
+/* Fancy Headline */
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+animation: bounceInDown 4s forwards;
+  
+}
+
+.hero-content h1:hover {
+  text-shadow: 0 0 15px rgb(185, 25, 25);
+  
+}
+
+/* Tagline */
+.hero-content p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #f5f5f5;
+  opacity: 0.9;
+  animation: bounceInDown 2s forwards;
+}
+
+/* Button */
+.hero-btn {
+  background: rgba(180, 18, 18, 0.905);
+  color: white;
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+    animation: bounceInUp 2s forwards;
+}
+.hero-btn:hover {
+  background: black;
+  box-shadow: 0 0 15px white;
+    transition: all 0.9s ease;
+}
+
+#merge:hover {
+    transform: scale(1.1);
+    transition: 0.6s ease-in 0.9s;
+}
+
+.merge-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem;
+    text-align: center;
+    margin-top: -12rem;
+    z-index: 10;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 0 5px black;
+
+}
+
+.right {
+    border-right: 1px solid black;
+    padding-right: 2rem;
+}
+
+.merge-flex img {
+    width: 5rem;
+}
+
+.anl{
+    opacity: 0;   
+
+}
+
+.anl.animate {
+    animation: fadeInLeft 1s forwards; /* referring directly to the animation's @keyframe declaration */
+    opacity: 1;
+    overflow: hidden;
+}
+
+.anu{
+    opacity: 0;   
+
+}
+
+.anu.animate {
+    animation: fadeInUp 1s forwards; /* referring directly to the animation's @keyframe declaration */
+    opacity: 1;
+    overflow: hidden;
+}
+
+.anr{
+    opacity: 0;   
+
+}
+
+.anr.animate {
+    animation: fadeInRight 1s forwards; /* referring directly to the animation's @keyframe declaration */
+    opacity: 1;
+    overflow: hidden;
+}
+
+#about{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.photo {
+    background-image: url('background.png');
+    padding: 3rem;
+    border-radius: 50%;
+}
+
+.photo img{
+    width: 80%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    opacity: 0;   
+
+}
+
+.photo img.animate {
+    animation: rollIn 1s forwards; /* referring directly to the animation's @keyframe declaration */
+    opacity: 1;
+    overflow: hidden;
+}
+
+.about-text {
+    width: 100%;
+    opacity: 0;    
+    
+}
+
+.about-text.animate {
+    animation: bounceInRight 1s forwards;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.about-text h3 {
+    color: rgba(180, 18, 18, 0.905);
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    
+}
+
+.about-text h4 {
+    color: black;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    font-weight: 200;
+    
+}
+
+.about-img {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.about-img i {
+    font-size: 2.5rem;
+    color: rgba(180, 18, 18, 0.905);
+}
+
+
+.about-img p {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 80%;
+}
+
+
+
+
+#school {
+    background-image: url('https://cdn.pixabay.com/photo/2024/04/09/05/38/ai-generated-8685102_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgba(153, 15, 15, 0.7);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    color: white;
+    
+    text-align: center;
+    
+
+}
+
+
+#school h3 {
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+#school h4 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    font-weight: 200;
+    
+}
+
+#school p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 400;
+    
+}
+
+.school a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(184, 36, 36);
+    padding: 1rem;
+    
+    border-radius: 2rem;
+}
+
+#school a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    transition: 0.7s ease 0.8s;
+}
+
+
+
+.work-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    opacity: 0;
+
+}
+
+.work-head.animate {
+    animation: bounceInUp 1s forwards; /* referring directly to the animation's @keyframe declaration */
+    overflow: hidden;
+    opacity: 1;
+}
+
+.work-head h2 {
+    color: rgb(184, 36, 36);
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+}
+
+.work-head h3 {
+    
+    font-size: 3rem;
+    font-weight: 700;
+    
+}
+.work-head button {
+    background-color: rgb(184, 36, 36);
+    padding: 1rem;
+    font-weight: 300;
+    border: none;
+    border-radius: 3rem;
+    
+}
+
+.work-head a {
+    color: white;
+    text-decoration: none;
+}
+
+.work-head button:hover {
+    background-color: black;
+    padding: 1rem;
+   transition: 0.5s ease 0.9s;
+
+    
+}
+
+
+.works {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    padding-bottom: 4rem;
+        
+}
+
+.work-card {
+    border: 1px solid rgba(67, 67, 67, 0.304);
+    text-align: center;   
+    opacity: 0;
+    border-radius: 3rem;
+
+}
+
+.work-card.animate{
+    animation: backInUp 1s forwards; /* referring directly to the animation's @keyframe declaration */
+    overflow: hidden;
+    opacity: 1;
+}
+
+.work-card:hover {
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.9);
+    background-color: rgba(184, 36, 36, 0.8);
+    color: white;
+    transform: scale(1.1);
+    transition: 0.7s ease-in .5s;
+
+}
+
+.works img {
+    aspect-ratio: 5/3;
+    width: 100%;
+}
+
+.works h5 {
+    padding-top: 1rem;
+    
+}
+
+.works p{
+    padding: 0 1rem;
+    
+}
+
+
+
+#review {
+    background-image: url('https://cdn.pixabay.com/photo/2015/07/10/20/54/stethoscope-840125_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(50%); */
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+  
+}
+
+.reviews {
+    position: relative;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+
+
+.reviews p {
+
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.reviews h4{
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    color: white;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.five-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;   
+    padding-bottom: 6rem;
+}
+
+.five-stars img{
+    width: 2rem;
+}
+
+
+#lead {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.text-one {
+    order: 2;
+}
+
+.text-two {
+    order: 1;
+}
+
+.lead-head {
+    text-align: center;
+
+}
+
+.lead-head h2 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.lead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    padding-bottom: 2rem;
+
+}
+
+.lead h4 {
+    font-size: 1.3rem;
+    color: grey;
+    font-weight: 300;
+}
+
+.lead p {
+    padding-bottom: 1rem;
+}
+
+.lead-text {
+    width: 50%;
+}
+
+.lead img {
+    width: 30%;
+    border-radius: 5rem;
+}
+
+.lead button {
+    background-color: rgba(184, 36, 36, 0.8);
+    padding: 1rem;
+    border-radius: 3rem;
+    border: none;
+}
+
+.lead button:hover {
+    background-color: black;
+    padding: 1rem;
+    transition: 0.3s ease-in 0.5s;
+}
+
+.lead a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+#contact {
+    background-color: rgba(0, 0, 0, 0.84);
+    color: white;
+}
+
+.contact-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+    animation: bounceInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    overflow: hidden;
+
+}
+
+.contact-logo{
+    display: flex;
+    align-items: center;
+}
+
+.contact-logo img{
+    width: 10rem;
+}
+
+
+
+
+.contact-info h1 {
+    letter-spacing: -2px;
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: start;
+}
+
+
+form input,
+form textarea,
+form select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    background-color: rgba(205, 205, 205, 0.4);
+    resize: none;
+    outline: none;
+    padding: .5rem;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: transparent;
+    
+}
+
+form label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+.contact-form button {
+    background-color: rgba(184, 36, 36, 0.844);
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    border: transparent;
+}
+
+iframe {
+    width: 50%;
+}
+
+
+.contact-form {
+    width: 50%;
+}
+
+.contact-info span {
+    font-weight: 700;
+    font-size: 1.5rem;
+   
+}
+
+
+
+#faq {
+    
+    color: black;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.faq-head {
+    opacity: 0;
+}
+
+.faq-head.animate{
+    opacity: 1;
+    animation: fadeInUp 1s forwards; /* referring directly to the animation's @keyframe declaration */
+    overflow: hidden;
+}
+
+.accordion {
+    opacity: 0;
+}
+
+.accordion.animate{
+    opacity: 1;
+    animation: fadeInUp 1s forwards; /* referring directly to the animation's @keyframe declaration */
+    overflow: hidden;
+}
+
+#faq h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 3rem;
+    color: rgba(0, 0, 0, 0.77);
+}
+
+#summary {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: rgba(165, 29, 29, 0.9844);
+    /* padding-bottom: 3rem; */
+}
+
+
+.flex {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 3rem;
+    color: white;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+.flex a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 0.8rem;
+}
+
+.flex span{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 0.8rem;
+}
+
+.flex h5 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.second a {
+    padding-bottom: 1rem;
+}
+
+.flex h4 {
+    color: white;
+}
+
+.bag a {
+    color: black;
+}
+
+.second li {
+    list-style-type: none;
+}
+
+.flex h6, .flex p {
+    font-size: 0.8rem;
+}
+
+.first h3 {
+    font-weight: 900;
+    font-size: 2.8rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.first h3 img {
+    width: 5rem;
+}
+.first h4 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.input {
+    display: flex;
+    
+}
+
+.input input {
+    padding: 1rem;
+    width: 85%;
+    border: none;
+    outline: none;
+
+}
+
+.input button {
+    border: none;
+    color: white;
+    background-color: black;
+    margin-left: -1rem;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.address {
+    display: flex;
+}
+
+.address-text h6{
+    font-weight: 700;
+}
+
+footer {
+    padding-top: 3rem;
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+    background-color: black;
+}
+
+footer span {
+    font-weight: 700;
+    color: rgba(198, 46, 46, 0.863);
+}
+
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+     .nav-menu {
+        display: block;
+        cursor: pointer;
+        
+        
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    header {
+        display: none;
+
+    }
+
+    .about{
+        display: block;
+        width: 100%;
+
+    }
+
+    .merge-flex {
+        margin-top: 5rem;
+        display: block;
+    }
+
+    .right {
+        border-right: none;
+    }
+
+
+    .about-text{
+        padding-top: 2rem;
+    }
+
+    .work-head {
+        width: 100%;
+    }
+
+    .work-head h3 {
+        font-size: 2rem;
+        padding-top: 1rem;
+        font-weight: 300;
+    }
+
+     .works {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .work-head p{
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .works a{
+        padding: .5rem;
+    }
+
+    .form-group select {
+        font-size: 1rem;
+    }
+
+    .accordion-body {
+        font-size: 1rem;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .first {
+        padding: 1rem;
+    }
+
+    .second {
+        padding: 1rem;
+    }
+
+    .third {
+        padding: 1rem;
+    }
+
+    .fourth {
+        padding: 1rem;
+    }
+
+    
+}
+
+
+
+@media (max-width: 1000px){
+    html {
+        font-size: 14px;
+    }
+
+    .about {
+        text-align: center;
+        width: 100%;
+    }
+
+    .photo {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lead {
+        display: block;
+    }
+
+    .lead-text {
+        width: 100%;
+        
+    }
+
+    .lead img {
+        width: 100%;
+        padding-bottom: 3rem;
+    }
+
+    .text-one {
+        order: 1;
+    }
+
+    .text-two {
+        order: 2;
+    }
+
+    .contact-main{
+        display: block;
+        gap: 3rem;
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+   .about-img {
+    display: block;
+    width: 100%;
+   }
+
+   .about-img span {
+    display: inline-block;
+    width: 100%;
+   }
+
+  
+} 
+
+@media (max-width: 700px){
+    html {
+        font-size: 12px;
+    }
+
+    .logo h1 {
+        display: none;
+    }
+
+    #showcase h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-text h4 {
+        font-size: 2.2rem;
+    }
+
+    #school {
+        padding-top: 10rem;
+    }
+
+    #school h4 {
+        font-size: 2rem;
+    }
+
+    #school p{
+        font-size: 1.3rem;
+    }
+
+    .works {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+     #review h1{
+        font-size: 1.8rem;
+    }
+    #review h4{
+        font-size: 1.5rem;
+    }
+
+    .td {
+        display: block;
+    }
+    #appointment form {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer p, footer span{
+        font-size: 0.9rem;
+    }
+
+
+
+} 
