@@ -79,6 +79,10 @@ header i{
     text-decoration: none;
 }
 
+h3, h4, h2 {
+    font-family: "El Messiri", Sans-serif;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -183,6 +187,7 @@ nav .active {
 
 
 .hero-d {
+    
   position: relative;
   padding-top: 10rem;
   padding-bottom: 20rem;
@@ -244,13 +249,18 @@ nav .active {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: white;
-animation: bounceInDown 4s forwards;
+    animation: bounceInDown 4s forwards;
+    font-family: "El Messiri", Sans-serif;
   
 }
 
 .hero-content h1:hover {
   text-shadow: 0 0 15px rgb(185, 25, 25);
   
+}
+
+h1 {
+    font-family: "El Messiri", Sans-serif;
 }
 
 /* Tagline */
@@ -824,8 +834,8 @@ iframe {
 
 
 #faq {
-    
-    color: black;
+    background-color: rgba(0, 0, 0, 0.871);
+    color: white;
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
@@ -855,7 +865,7 @@ iframe {
     font-weight: 800;
     text-align: center;
     padding-bottom: 3rem;
-    color: rgba(0, 0, 0, 0.77);
+    color: white;
 }
 
 #summary {

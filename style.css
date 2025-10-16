@@ -213,8 +213,8 @@ nav .active {
 @keyframes slideshow {
   0% { background-image: url('https://cdn.pixabay.com/photo/2025/05/29/08/25/doctor-9628974_1280.jpg'); }
   33% { background-image: url('https://cdn.pixabay.com/photo/2016/11/08/05/29/surgery-1807541_1280.jpg'); }
-  66% { background-image: url('https://cdn.pixabay.com/photo/2017/12/10/05/31/kenya-3009299_1280.jpg'); }
-  100% { background-image: url('PRWM\ Logo-Colour-Badge.svg'); }
+  66% { background-image: url('https://cdn.pixabay.com/photo/2014/12/10/21/01/doctor-563428_1280.jpg'); }
+  100% { background-image: url('PRWM-Logo-Colour-Badge.svg'); }
 }
 
 .hero::after {
@@ -251,13 +251,17 @@ nav .active {
 
 .hero h1 span {
     color: rgb(185, 25, 25);
-    font-family: "El Messiri", Sans-serif;;
+    font-family: "El Messiri", Sans-serif;
     font-size: 3rem;
 }
 
 .hero-content h1:hover {
   text-shadow: 0 0 15px rgb(185, 25, 25);
   
+}
+
+h3, h4, h2 {
+    font-family: "El Messiri", Sans-serif;
 }
 
 /* Tagline */
@@ -360,29 +364,80 @@ nav .active {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3rem;
     
 }
 
 .photo {
-    background-image: url('background.png');
-    background-position: center;
-    padding: 4rem;
-    border-radius: 50%;
-}
-
-.photo img{
     width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.photo-1 img {
+    width: 12rem;
     border-radius: 50%;
-    aspect-ratio: 1/1;
-    opacity: 0;   
+    aspect-ratio: 1/1; 
+    
+   
+    
+}
+
+.photo-1 h3 {
+    border-radius: 50%;
+    padding: 1rem;
+    z-index: 10;
+    background-color: white;
+    margin-top: -20rem;
+    position: relative;
+    
+}
+
+
+.photo-2 img {
+    width: 30rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1; 
+    z-index: 0;
+    margin-left: -10rem;
 
 }
 
-.photo img.animate {
+
+.photo-3 button {
+    border-radius: 50%;
+    aspect-ratio: 1/1; 
+    padding: 2rem;
+    background-color: rgb(180, 18, 18);
+    color: white;
+    border: none;
+    
+
+}
+.photo-3 h3{
+    padding: 1rem;
+    border-radius: 50%;
+    text-align: end;
+    z-index: 10;
+    background: white;
+    position: relative;
+    margin-top: 28rem;
+    margin-left: -10rem;
+    
+
+}
+
+.roll img.animate {
     animation: rollIn 1s forwards; /* referring directly to the animation's @keyframe declaration */
     opacity: 1;
     overflow: hidden;
 }
+
+.roll img {
+    opacity: 0;   
+}
+
 
 .about-text {
     width: 100%;
@@ -646,8 +701,107 @@ nav .active {
 }
 
 
-#lead {
+
+
+.news-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 5rem;
+    
+
+}
+
+
+.news-head h2 {
+    color: rgb(184, 36, 36);
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+}
+
+.contain {
+    text-align: center;
+    background-image: url('https://cdn.pixabay.com/photo/2021/12/13/02/06/leaf-6867454_1280.jpg');
+    color: white;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.contain h3 {
+    
+    font-size: 3rem;
+    font-weight: 700;
+    
+}
+.news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding-bottom: 4rem;
+        
+}
+
+.news-card {
+    border: 1px solid rgba(67, 67, 67, 0.304);
+    text-align: center;   
+    margin-top: 2rem;
+    border-radius: 3rem;
+
+}
+
+.news i {
+    display: inline-block;
+    padding-top: .5rem;
+}
+
+.news-text {
+    padding: 0.5rem;
+}
+
+.news-card img {
+    width: 100%;
+}
+
+.news-card h5 {
+    font-weight: 700;
+}
+
+.news-card a {
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+    border-radius: 3rem;
+    background-color: rgb(184, 36, 36);
+    display: inline-block;
+}
+
+.news-card:hover {
+    transform: scale(1.15);
+    transition: 0.7s ease 0.2s;
+
+}
+
+#news button {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+}
+
+#news button:hover {
+    background-color: rgb(184, 36, 36);
+    color: white;
+    transition: 0.7s ease 0.2s;
+}
+
+
+
+#lead {
+    padding-top: 2rem;
     padding-bottom: 5rem;
 }
 
@@ -1028,9 +1182,9 @@ footer span {
         font-weight: 300;
     }
 
-     .works {
+     .news {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .work-head p{
