@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "El Messiri", Sans-serif;
     
 }
 
@@ -244,7 +244,7 @@ nav .active {
   letter-spacing: 2px;
   color: white;
     animation: bounceInDown 4s forwards;
-    font-family: "El Messiri", Sans-serif;;
+    font-family: "El Messiri", Sans-serif;
     
   
 }
@@ -969,7 +969,7 @@ iframe {
 
 
 #faq {
-    
+
     color: black;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -983,6 +983,29 @@ iframe {
     opacity: 1;
     animation: fadeInUp 1s forwards; /* referring directly to the animation's @keyframe declaration */
     overflow: hidden;
+}
+
+/* Change accordion button color when active/open */
+.accordion .accordion-button:not(.collapsed) {
+  background-color: #b92c3a; /* Bootstrap red */
+  color: #fff; /* white text for contrast */
+  box-shadow: none; /* remove blue glow */
+}
+
+/* Optional: smooth color transition */
+.accordion .accordion-button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* .accordion button {
+    background-color: black;
+    color: white;
+    border-radius: 4rem;
+} */
+
+/* Optional: change border of active accordion */
+.accordion-item {
+  border: 1px solid #a42532;
 }
 
 .accordion {
@@ -1000,7 +1023,7 @@ iframe {
     font-weight: 800;
     text-align: center;
     padding-bottom: 3rem;
-    color: rgba(0, 0, 0, 0.77);
+    color: black
 }
 
 #summary {
@@ -1197,6 +1220,12 @@ footer span {
         font-weight: 700;
     }
 
+    .news-card h5 {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+
 
     .form-group select {
         font-size: 1rem;
@@ -1303,6 +1332,12 @@ footer span {
 
     .logo h1 {
         display: none;
+    }
+    .photo-1 img {
+        width: 10rem;
+    }
+    .photo-2 img {
+        width: 25rem;
     }
 
     #showcase h2 {

@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "El Messiri", Sans-serif;
     
 }
 
@@ -858,6 +858,29 @@ iframe {
     opacity: 1;
     animation: fadeInUp 1s forwards; /* referring directly to the animation's @keyframe declaration */
     overflow: hidden;
+}
+
+/* Change accordion button color when active/open */
+.accordion .accordion-button:not(.collapsed) {
+  background-color: #b92c3a; /* Bootstrap red */
+  color: #fff; /* white text for contrast */
+  box-shadow: none; /* remove blue glow */
+}
+
+/* Optional: smooth color transition */
+.accordion .accordion-button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* .accordion button {
+    background-color: black;
+    color: white;
+    border-radius: 4rem;
+} */
+
+/* Optional: change border of active accordion */
+.accordion-item {
+  border: 1px solid #a42532;
 }
 
 #faq h3 {
